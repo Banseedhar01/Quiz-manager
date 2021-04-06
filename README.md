@@ -1,1 +1,1 @@
-# Quize-manager
+# Quiz-manager
