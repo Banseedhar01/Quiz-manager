@@ -20,7 +20,7 @@
                 $type = mysqli_real_escape_string($conn, $_POST['usertype']);
                 $username = mysqli_real_escape_string($conn, $_POST['username']);
                 $password = mysqli_real_escape_string($conn, $_POST['pass']);
-                $password = crypt($password, 'rakeshmariyaplarrakesh');
+                $password = crypt($password, 'azbycxdwevfug');
                 $sql = "select * from " . $type . " where mail='{$username}'";
                 $res =   mysqli_query($conn, $sql);
                 if ($res) {
