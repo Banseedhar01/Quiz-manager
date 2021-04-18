@@ -26,8 +26,8 @@ if (isset($_POST['studsu'])) {
         $gender1 = mysqli_real_escape_string($conn, $_POST['gender1']);
         $password1 = mysqli_real_escape_string($conn, $_POST['password1']);
         $cpassword1 = mysqli_real_escape_string($conn, $_POST['cpassword1']);
-        $password1 = crypt($password1,'rakeshmariyaplarrakesh');
-        $cpassword1 = crypt($cpassword1,'rakeshmariyaplarrakesh');
+        $password1 = crypt($password1,'azbycxdwevf');
+        $cpassword1 = crypt($cpassword1,'azbycxdwevf');
         if ($password1 == $cpassword1) {
             $sql = "insert into student (usn,name,mail,phno,dept,gender,DOB,pw) values('$usn1','$name1','$mail1','$phno1','$dept1','$gender1','$dob1','$password1')";
             if (mysqli_query($conn, $sql)) {
@@ -66,8 +66,8 @@ require 'sql.php';
         $gender2 = mysqli_real_escape_string($conn, $_POST['gender2']);
         $password2 = mysqli_real_escape_string($conn, $_POST['password2']);
         $cpassword2 = mysqli_real_escape_string($conn, $_POST['cpassword2']);
-        $password2 = crypt($password2,'rakeshmariyaplarrakesh');
-        $cpassword2 = crypt( $cpassword2,'rakeshmariyaplarrakesh');
+        $password2 = crypt($password2,'azbycxdwevf');
+        $cpassword2 = crypt( $cpassword2,'azbycxdwevf');
         if ($password2 == $cpassword2) {
             $sql = "insert into staff (staffid,name,mail,phno,dept,gender,DOB,pw) values('$usn2','$name2','$mail2','$phno2','$dept2','$gender2','$dob2','$password2')";
             if (mysqli_query($conn, $sql)) {
@@ -237,9 +237,9 @@ require 'sql.php';
                     <label for="dept2" style="">Department</label><br>
                     <select name="dept2" style="overflow:hidden;" class="selc" required>
                         <option value="CSE">CSE</option>
-                        <option value="ISE">ISE</option>
+                        <option value="ISE">MEC</option>
                         <option value="ECE">ECE</option>
-                        <option value="EEE">EEE</option>
+                        <option value="EEE">CIV</option>
                     </select><br><br> <label for="dob2">DOB</label><br>
                     <input type="date" name="dob2" required><br><Br>
                     <label for="gender2">Gender</label><br>
