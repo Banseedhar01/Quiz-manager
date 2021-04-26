@@ -55,9 +55,9 @@ CREATE TABLE IF NOT EXISTS `dept` (
 
 INSERT INTO `dept` (`dept_id`, `dept_name`) VALUES
 (1, 'CSE'),
-(2, 'MEC'),
+(2, 'ISE'),
 (3, 'ECE'),
-(4, 'CIV');
+(4, 'EEE');
 
 -- --------------------------------------------------------
 

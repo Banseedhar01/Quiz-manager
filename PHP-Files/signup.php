@@ -237,9 +237,9 @@ require 'sql.php';
                     <label for="dept2" style="">Department</label><br>
                     <select name="dept2" style="overflow:hidden;" class="selc" required>
                         <option value="CSE">CSE</option>
-                        <option value="ISE">MEC</option>
+                        <option value="ISE">ISE</option>
                         <option value="ECE">ECE</option>
-                        <option value="EEE">CIV</option>
+                        <option value="EEE">EEE</option>
                     </select><br><br> <label for="dob2">DOB</label><br>
                     <input type="date" name="dob2" required><br><Br>
                     <label for="gender2">Gender</label><br>
